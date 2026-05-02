@@ -6,10 +6,13 @@ import LoginPage from './pages/loginpage'
 import Registerpage from './pages/registerpage'
 import AdminPage from './pages/adminpage'
 import Test from './pages/test'
+import {Toaster} from 'react-hot-toast'
+import { FaTwitter } from "react-icons/fa"
 function App() {
 
   return (
     <div className='w-full h-screen bg-amber-600'>
+      <Toaster position='top-right'/>
       <Routes>
         <Route path='/' element={<Homepage />} />
         <Route path='/login' element={<LoginPage />} />
