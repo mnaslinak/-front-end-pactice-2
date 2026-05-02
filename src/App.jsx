@@ -5,7 +5,7 @@ import Homepage from './pages/homepage'
 import LoginPage from './pages/loginpage'
 import Registerpage from './pages/registerpage'
 import AdminPage from './pages/adminpage'
-
+import Test from './pages/test'
 function App() {
 
   return (
@@ -15,6 +15,7 @@ function App() {
         <Route path='/login' element={<LoginPage />} />
         <Route path='/signup' element={<Registerpage/>}/>
         <Route path='/admin/*' element={<AdminPage/>}/>
+        <Route path='/test' element={<Test/>}/>
       </Routes>
    </div>
       
